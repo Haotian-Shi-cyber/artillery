@@ -2,7 +2,7 @@
 #
 # core module for reusable / central code
 #
-#
+#init
 #python2to3
 import string
 import random
@@ -1254,6 +1254,7 @@ def sort_banlist():
             ips_parsed = ips + "\n" + ips_parsed
     filewrite.write(banner + "\n" + ips_parsed)
     filewrite.close()
+init_globals()   
 #removed turns out the issue was windows carriage returns in the init script i had.
 #note to self never open linux service files on windows.doh
 # this was just a place holder artillery.py code
